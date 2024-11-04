@@ -18,14 +18,13 @@
     /*border:1px solid black;*/
 }
 
-.bodyspecial
+body
 {
 background-color:white;
   background:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5509.jpeg?v=1730586853774') fixed !important;
 }
 
-
-.bodyspecial .headerspecial
+body header
 {
   display: flex;
     justify-content: space-between;
@@ -34,18 +33,20 @@ background-color:white;
     font-size: 1.3em;
 }
 
-.headerspecial .fleche i
+header .fleche i
 {
   font-size:2em;
+  color:var(--color1);
 }
 
-.headerspecial .detailsmilieu p
+
+header .detailsmilieu p
 {
     letter-spacing: 3;
   font-size:1.4em;
 }
 
-.headerspecial .panierspecial i
+header .panierspecial i
 {
     border-radius: 50%;
     padding: 0.4em;
