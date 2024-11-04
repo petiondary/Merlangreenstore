@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --color1:#1e4b26;
+    --color2:#55833d;
+    --color3:#b05216;
+    --color4:#e6e9f0;
+    --police1:"Poppins", sans-serif;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--police1);
+    /*border:1px solid black;*/
+}
+
+.bodyspecial
+{
+background-color:white;
+  background:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5509.jpeg?v=1730586853774') fixed !important;
+}
+
+
+.bodyspecial .headerspecial
+{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.1em 3.5em;
+    font-size: 1.3em;
+}
+
+.headerspecial .fleche i
+{
+  font-size:2em;
+}
+
+.headerspecial .detailsmilieu p
+{
+    letter-spacing: 3;
+  font-size:1.4em;
+}
+
+.headerspecial .panierspecial i
+{
+    border-radius: 50%;
+    padding: 0.4em;
+    background: var(--color1);
+    color:white; 
+  font-size:1.6em;
+    
+}
+
+
+footer {
+  padding:10px;
+  background:var(--color1);
+  text-align: center;
+  color: white;
+  font-size: 0.61em;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  position:sticky;
+  bottom:0;
+}
+
+/*Fen Base */
+#blocproduit
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#blocproduit .image-bloc-produit 
+{
+    border-radius: 10px;
+    width:70%;
+    margin-top:9em;
+    padding: 1.1em;
+}
+
+.image-bloc-produit img
+{
+    width:100%;
+    aspect-ratio:1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#blocproduit .nom-bloc-produit
+{
+    color: var(--color1);
+}
+
+#blocproduit .nom-bloc-produit h3
+{
+font-size: 4.25em;
+    letter-spacing: 3;
+  margin:0.5em auto;
+}
+
+#dimension 
+{
+margin:2em auto;
+  text-align:center;
+}
+
+#dimension h3
+{
+  color:var(--color1);
+letter-spacing:4;
+  font-size:1.7em;
+}
+
+#different-dimension
+{
+display:flex;
+justify-content:center;
+gap:5em;
+}
+
+#different-dimension .type-dimension {
+  display: flex;
+  flex-direction:column;
+  gap: 2em; /* Espace entre chaque option de dimension */
+  align-items: center;
+  justify-content: center;
+  margin-top:5em;
+}
+
+.dimension-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#different-dimension .contain-cercle {
+  border-radius: 50%;
+  background: var(--color1);
+  width: 5em;
+  height: 5em; /* Assurer un cercle parfait */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#different-dimension .resultat-dimension {
+  font-size: 2em;
+  border: none;
+  background: transparent;
+  color: white;
+  font-weight:bold;
+}
+
+.info-produit-if
+{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:-25;
+}
+.info-produit-if h6 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #333; /* Couleur du texte pour le nom de la taille */
+}
+
+.info-produit-if h5 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333; 
+}
+
+
+#panier-if
+{
+  padding: 2em 7.3em;
+display:flex;
+  justify-content:space-between;
+  
+}
+
+
+#panier-if .info-quantite
+{
+display:flex;
+  align-items:center;
+  gap:0.11em;
+
+}
+
+#panier-if .info-quantite #minus:nth-child(1) /*signe moins*/
+{
+  color:var(--color1);
+  font-size:2.5em;
+}
+
+#panier-if #input-if input
+{
+  width:80px;
+  height:80px;
+  font-size:3em;
+  text-align:center;
+  padding:2px;
+  border:none;
+  background:none;
+  color:var(--color1);
+}
+
+#panier-if #plus i
+{
+font-size:3em;
+  color:var(--color1);
+}
+
+
+#ajouter-panier h4
+{
+background:var(--color1);
+padding:10px 15px;
+border-radius:5px;
+color:white;
+}

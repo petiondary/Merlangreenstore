@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color1: #1e4b26;
+  --color2: #55833d;
+  --color3: #b05216;
+  --color4: #e6e9f0;
+  --police1: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--police1);
+  width: 100%;
+  /*border:1px solid white;*/
+}
+
+body {
+  background-color: var(--color1);
+  background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5453.jpeg?v=1730488194513")
+    fixed;
+}
+:required {
+  color: red;
+}
+
+/*komansman index 
+/*komansman header*/
+header {
+  color: white;
+  padding: 2em 1.2em;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  border-bottom: 1px solid white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color1);
+
+  /* font-size:1.35em;*/
+}
+
+header .mobile-menu {
+  order: 0;
+}
+
+header .mobile-menu i {
+  width: auto;
+  font-size: 2.2em;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  order: 1;
+  font-size: 1.4em;
+}
+
+header .logo i {
+  font-size: 2em;
+  width: auto;
+}
+
+.nav-bar {
+  padding: 0;
+  height: auto;
+  margin: auto;
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar ul li a:hover {
+  color: var(--color3);
+}
+
+.nav-bar ul li a:active {
+  color: var(--color3);
+}
+
+header .icon-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  margin: auto;
+  order: 2;
+}
+
+header .icon-nav i {
+  width: auto;
+  font-size: 2em;
+}
+
+/*Fen Header*/
+
+/*Corps page la */
+
+.infos-business {
+  margin-top: 5em;
+  padding: 2em 1em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-and-description {
+  width: 100%;
+  background: var(--color2);
+  margin: 0;
+  padding: 2em 3em;
+  order: 1;
+  border-radius: 25px;
+}
+.title-and-description h1 {
+  font-size: 2.4em;
+  font-weight: 600;
+  color: var(--color1);
+  margin-bottom: 1em;
+}
+
+.title-and-description p {
+  font-size: 13px;
+  text-align: justify;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.infos-business .button {
+  margin: 5em auto;
+  display: flex;
+  gap: 6em;
+}
+
+.button .btn-commande a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2.5;
+}
+
+#commandez {
+  background-color: var(--color1);
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-weight: 800;
+  font-size: 1.75em;
+}
+
+#commandez:hover {
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-weight: 800;
+  color: var(--color3);
+}
+
+#explorez {
+  background-color: var(--color1);
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-weight: 800;
+  font-size: 1.75em;
+}
+
+#explorez:hover {
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 25px;
+  font-weight: 800;
+  color: var(--color2);
+}
+
+.infos-business .image-slideshow {
+  background-image: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5457.jpeg?v=1730352614221");
+  width: 100%;
+  height: 35em;
+  border: 2px solid white;
+  margin: 2.5em;
+  border-radius: 25px;
+}
+
+/*.info-business .image-slideshow .slide
+{
+width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      animation: bgslide 6s infinite;
+}
+
+
+
+.slide:nth-child(1){animation-delay:5s; background-image:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5455.webp?v=1730352153161');}
+
+.image-slideshow .slide:nth-child(2){animation-delay:10s; background-image:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5454.jpeg?v=1730352159117');}
+
+.image-slideshow .slide:nth-child(3){animation-delay:15s; background-image:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5453.jpeg?v=1730352164102');}
+
+.image-slideshow .slide:nth-child(4){animation-delay:20s; background-image:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5453.jpeg?v=1730352164102');}
+
+.image-slideshow .slide:nth-child(5){animation-delay:25s; background-image:url('https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5456.jpeg?v=1730352610076');}
+
+*/
+
+/*komansman footer */
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 0.61em;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+}
+/*Fen FOoter*?
+
+/*Fen Index*/
+
+/*komanman page shop*/
+
+#banner {
+  position: relative;
+}
+
+#banner .banner img {
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+#banner .banner #text-on-banner {
+  color: white;
+  position: absolute;
+  top: 30%;
+  padding: 3em;
+}
+
+#text-on-banner h4 {
+  color: var(--color4);
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3;
+}
+
+#text-on-banner p {
+  font-size: 1.8em;
+  line-height: 1.75;
+  text-align: justify;
+  color: white;
+  font-style: italic;
+}
+
+#nos-produits {
+  margin-top: 2.5em;
+}
+
+#nos-produits .menu h1 {
+  color: white;
+  font-weight: 700;
+  padding-left: 1.3em;
+  font-size: 2.5em;
+  margin: 1.4em auto;
+}
+
+.liste-produits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 3em 2em;
+}
+
+.produit-unique {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px;
+  color: white;
+  aspect-ratio: 1/1;
+  background-color: var(--color1);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.produit-unique img {
+  aspect-ratio: 1/1;
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid white;
+  margin: auto;
+  object-fit: cover;
+}
+
+/*
+.produit-unique img:hover
+{
+    max-width: 4em;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    transform:scale(1.1);
+    transition: 0.7s;
+}
+*/
+.produit-unique .nom-produit {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1.2;
+}
+
+.produit-unique .prix-produit {
+  color: white;
+  font-size: 21.4px;
+}
+/*fen page shop */
+
+/*komansman page contact.html */
+
+#contact h1 {
+  color: white;
+  font-size: 2.4em;
+  margin-top: 1em;
+}
+
+#contact .contact-container {
+  width: 55%;
+  margin: 5em auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 5em 0.5em;
+  border-radius: 10px;
+  background: var(--color1);
+}
+
+#contact .contact-container .form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.form h4 {
+  color: white;
+  text-align: center;
+  font-size: 1.53em;
+}
+
+#contact .contact-container .form .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  margin: 1em auto;
+}
+
+.input-group i {
+  color: white;
+  font-size: 1.5em;
+  width: 2em;
+}
+
+.input-group input {
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 0 10px 10px 0;
+  width: 65.5%;
+  padding: 1.02em;
+}
+
+.input-group input::placeholder {
+  text-align: center;
+  color: var(--color3);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.input-group textarea::placeholder {
+  text-align: center;
+  color: var(--color3);
+  font-weight: bold;
+  font-size: 0.5em;
+  text-align: justify;
+}
+
+.input-group textarea {
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 65%;
+  /*margin-left:3.6em;*/
+  padding: 2em;
+  margin-left: 3.9em;
+  height: 20vh;
+  /*justify-self:center;*/
+}
+
+.form .btn-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.btn-submit button {
+  border: 1px solid white;
+  padding: 0.31em 1.7em;
+  background-color: var(--color3);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1em;
+  width: 25vw;
+  cursor: pointer;
+}
+
+.btn-submit button:hover {
+  border: 1px solid white;
+  padding: 0.31em 1.7em;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.1em;
+  width: 35vw;
+  cursor: pointer;
+}
+/*fen page contact hmtl */
+
+/*komansman page infosproduit.html */
+
+.bodyspecial {
+  background-color: white !important;
+  background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5509.jpeg?v=1730586853774")
+    fixed !important;
+}
+
+.bodyspecial .headerspecial {
+  background-color: transparent !important;
+  color: var(--color1) !important;
+  border: none !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.headerspecial .fleche i 
+{
+  
+}
+
+@keyframes bgslide {
+  /* 0% { opacity:0;}
+  10%{opacity:1;}
+  90%{opacity:0;}
+  100%{opacity:1;}
+  */
+
+  0% {
+    background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5455.webp?v=1730352153161")
+      center no-repeat;
+  }
+
+  25% {
+    background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/FIMG_5454.jpeg?v=1730352159117")
+      center no-repeat;
+  }
+
+  50% {
+    background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5494.jpeg?v=1730489749516")
+      center no-repeat;
+  }
+
+  75% {
+    background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5494.jpeg?v=1730489749516")
+      center no-repeat;
+  }
+
+  100% {
+    background: url("https://cdn.glitch.global/f0e0f190-d5ed-4ac9-aeba-11a3fa54b25c/IMG_5494.jpeg?v=1730489749516")
+      center no-repeat;
+  }
+}
+
+/* Fen Transition */
