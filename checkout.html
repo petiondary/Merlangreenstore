@@ -14,10 +14,26 @@
   <body>
     <section id="adresse-et-paiement">
   <div class="section-livraison">
-    <h3>Adresse De Livraison</h3>
+    <h3 class="titre-section">Adresse De Livraison</h3>
     <div class="nom-prenom-check">
-      <input type="text" placeholder="Prenom" autofocus required/>
-      <input type="text" placeholder="Nom" required />
+      <input type="text" placeholder="Prenom" name="prenom" autofocus required/>
+      <input type="text" name="nom" placeholder="Nom" required />
+    </div>
+    <div class="ligne-adresse">
+      <input type="text" placeholder="Adresse Complet" name="adresse" autofocus required/>
+    </div>
+  </div>
+  
+  <div class="section-paiement">
+    <h3 class="titre-section">Information de Paiement</h3>
+    <div class="titulaire-carte">
+      <label for="nomcarte">Nom</label><br/>
+      <input type="text" id="nomcarte" />
+    </div>
+    
+    <div class="numero-carte">
+      <label for="numerocarte">Numero Carte</label><br/>
+      <input type="text" id="numerocarte" placeholder="**** **** **** 1234"/>
     </div>
   </div>
     </section>
