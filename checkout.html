@@ -12,15 +12,30 @@
     <title> CheckOut Merelan Green Store</title>
   </head>
   <body>
+    
+       <header class="headerspecial">
+      <div class="fleche">
+        <i class="fa-solid fa-left-long"></i>
+      </div>
+
+      <div class="detailsmilieu">
+        <p>Details</p>
+      </div>
+
+      <div class="panierspecial">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    
     <section id="adresse-et-paiement">
   <div class="section-livraison">
     <h3 class="titre-section">Adresse De Livraison</h3>
     <div class="nom-prenom-check">
-      <input type="text" placeholder="Prenom" name="prenom" autofocus required/>
+      <input type="text" placeholder="Prenom" name="prenom" required/>
       <input type="text" name="nom" placeholder="Nom" required />
     </div>
     <div class="ligne-adresse">
-      <input type="text" placeholder="Adresse Complet" name="adresse" autofocus required/>
+      <input type="text" placeholder="Adresse Complet" name="adresse"  required/>
     </div>
   </div>
   
@@ -38,12 +53,12 @@
     
     <div class="exp-cvc">
       <div class="exp">
-        <label>Date Expiration</label>
+        <label>DATE EXP</label><br/>
         <input type="number" placeholder="MMYY" />
       </div>
       
       <div class="cvc">
-        <label>CVC</label>
+        <label>CVC</label><br/>
         <input type="password" placeholder="****" />
       </div>
     </div>
@@ -51,8 +66,14 @@
   
   <div class="section-infos-finale">
     <h4>Identification Transaction: <strong>0000000000</strong></h4>
-    <h3></h3>
+    <h3>Total: <span class="currency">12 875HTG</span></h3>
   </div>
+      
+      <div class="bouton-ch">
+        <button type="submit">
+          PAYER
+        </button>
+      </div>
     </section>
   </body>
 </html>

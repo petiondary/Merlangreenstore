@@ -34,18 +34,18 @@ body header
     font-size: 1.3em;
 }
 
-header .fleche i
+.headerspecial .fleche i
 {
   font-size:2em;
 }
 
-header .detailsmilieu p
+.headerspecial .detailsmilieu p
 {
-letter-spacing: 3;
+    letter-spacing: 3;
   font-size:1.4em;
 }
 
-header .panierspecial i
+.headerspecial .panierspecial i
 {
     border-radius: 50%;
     padding: 0.4em;
@@ -187,7 +187,6 @@ gap:5em;
   padding: 2em 7.3em;
 display:flex;
   justify-content:space-between;
-  align-items:center;
   
 }
 
@@ -227,78 +226,163 @@ font-size:3em;
 
 #ajouter-panier h4
 {
-  font-size:2em;
 background:var(--color1);
 padding:10px 15px;
 border-radius:5px;
 color:white;
 }
 
-/* komansman Page Checkout.html*/
-#liste-achat {
+
+/*komansman page mybag.html*/
+#adresse-et-paiement {
+background:white;
+padding:5em;
+  text-align:center;
+  display:flex;
+flex-direction:column;
+gap:5em;
+  width:50%;
+  margin:2em auto;
+
+}
+
+#adresse-et-paiement .section-livraison .nom-prenom-check
+{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin:1em auto;
+}
+
+.nom-prenom-check input
+{
+border-radius:0px;
+  width:50%;
+  height:2.5em;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+.section-livraison .ligne-adresse input
+{
+border-radius:0px;
+  width:100%;
+  height:3em;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+.section-paiement
+{
 display:flex;
   flex-direction:column;
+  justify-content:center;
+}
+
+.section-paiement .titulaire-carte
+{
+  margin:1em 0;
+  position:relative;
+}
+
+.section-paiement .titulaire-carte label
+{
+  
+text-align:left;
+  position:absolute;
+  top:0;
+  left:0;
+  margin-bottom:0.5em;
+}
+
+.section-paiement .titulaire-carte input
+{
+  width:100%;
+  border-radius:0;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+.section-paiement .numero-carte
+{
+  margin:1em 0;
+  position:relative;
+}
+
+.section-paiement .numero-carte input
+{
+  width:100%;
+  border-radius:0;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+}
+
+.section-paiement .numero-carte label
+{
+  
+text-align:left;
+  position:absolute;
+  top:0;
+  left:0;
   
 }
 
-#liste-achat .achat-unique{
-background:white;
-  display:flex;
-  justify-content:flex-start;
-  align-items:center;
-  padding:2em;
-  border:3.1px solid var(--color1);
-}
-
-.achat-unique img {
-width:160px;
-aspect-ratio:1/1;
-  object-fit:cover;
-  
-}
-
-.achat-unique .infos-produit-achat
-{
-margin-left:2em;
-  color:var(--color1);
-}
-
-.infos-produit-achat h6
-{
-letter-spacing:3;
-  font-weight:500;
-  font-size:2em;
-  text-transform:UPPERCASE;
-}
-
-.infos-produit-achat h5
-{
-font-weight:700;
-  font-size:1.6em;
-}
-
-.achat-unique .infos-quantite
-{
+.section-paiement .exp-cvc{
 display:flex;
-  align-items:center;
-  gap:0.5em;
+align-items:center;
+gap:2.1em;
 }
 
-.infos-quantite .minus i
-{
-font-size:2em;
+.exp-cvc .exp{
+width:50%;
+  position:relative;
 }
 
-.infos-quantite .input-if input
-{
-border:none;
-outline:none;
-font-size:2em;
-width:2em;
+.exp-cvc .exp label{
+font-weight:bold;
+  position:absolute;
+  top:0;
+  left:0;
+  
+}
+
+.exp-cvc .exp input{
+width:80%;
+font-size:1.32em;
+position:absolute;
+  left:0;
   text-align:center;
-}/*fen page checkout*/
-
-.infos-quantite .plus i
-{
-font-size:2em;
+  border-radius:0;
 }
+
+
+
+.exp-cvc .cvc{
+width:50%;
+  position:relative;
+}
+
+.exp-cvc .cvc label{
+font-weight:bold;
+  position:absolute;
+  top:0;
+  left:0;
+  
+}
+
+.exp-cvc .cvc input{
+width:80%;
+font-size:1.32em;
+position:absolute;
+  left:0;
+  text-align:center;
+  border-radius:0;
+}
+
+
+
+/*fen page mybag.html */
